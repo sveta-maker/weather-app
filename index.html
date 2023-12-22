@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Apptitle</title>
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="search-form">
+            <div class="city-selection">
+                <div class="city-search">  
+                    <input type="search" placeholder="Enter a city.."
+                     class="search-field"></div>
+                <div class="city-submit">
+                    <input type="submit" class="search-btn" value="Search"></div>
+            </div>
+        </form>
+        <div class="weather-general">
+
+            <div class="right-block">
+                <h1 id="city">Paderborn</h1>
+                <ul>
+                    <li id="current-day-time">Thirsday 16:21, broken clouds</li>
+                    <li>Humidity: <span id="humidity">78</span><span>%</span>, Wind: <span id="wind-speed">3.56</span><span>km/h</span></li>
+                </ul>
+
+            </div>
+
+
+            <div class="left-block">
+
+                <span class="temperature"><span id="icon">⛅️</span><span id="temp">-1</span></span>
+                <span class="grad">°C</span>
+            </div>
+
+
+
+
+        </div>
+
+
+        <div class="weather-forecast">
+            <div class="day">
+                <div class="dayOfWeek">Thursday ⛅️</div>
+                <div class="temperature-forecast">
+                    <span class="temperature-max">0°</span>
+                    <span class="temperature-min">-3°</span>
+                </div>
+            </div>
+            <div class="day">
+                <div class="dayOfWeek">Friday ⛅️</div>
+                <div class="temperature-forecast">
+                    <span class="temperature-max">1°</span>
+                    <span class="temperature-min">-2°</span>
+                </div>
+            </div>
+            <div class="day">
+                <div class="dayOfWeek">Saturday ⛅️</div>
+                <div class="temperature-forecast">
+                    <span class="temperature-max">-1°</span>
+                    <span class="temperature-min">-3°</span>
+                </div>
+            </div>
+            <div class="day">
+                <div class="dayOfWeek">Sunday ☁️</div>
+                <div class="temperature-forecast">
+                    <span class="temperature-max">2°</span>
+                    <span class="temperature-min">-1°</span>
+                </div>
+            </div>
+            <div class="day">
+                <div class="dayOfWeek">Monday ☁️</div>
+                <div class="temperature-forecast">
+                    <span class="temperature-max">0°</span>
+                    <span class="temperature-min">-1°</span>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="footer">
+            This project was coded by <span>Svitlana Movchan</span>
+    
+            and is
+            <a href="https://github.com" target="_blank" >open-sourced on GitHub</a>
+            and
+            <a href="https://www.netlify.com" target="_blank" >hosted on Netlify</a>
+        </div>
+
+    </div>
+    <script src="src/jscode.js"></script>
+</body>
+</html>
